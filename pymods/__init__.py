@@ -1,6 +1,6 @@
 from lxml import etree
 from lxml.builder import ElementMaker
-from _lxml import makeelement
+from ._custom_lxml import makeelement
 
 XSI_NAMESPACE = 'http://www.w3.org/2001/XMLSchema-instance'
 XLINK_NAMESPACE = 'http://www.w3.org/1999/xlink'
@@ -12,7 +12,6 @@ MODS_NAMESPACE_MAP = {
     'xsi': XSI_NAMESPACE,
     'xlink': XLINK_NAMESPACE
 }
-
 
 class ModsRoot(object):
 
